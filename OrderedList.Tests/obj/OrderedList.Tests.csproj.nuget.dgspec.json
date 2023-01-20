@@ -1,0 +1,152 @@
+{
+  "format": 1,
+  "restore": {
+    "c:\\Users\\anna\\Documents\\My Webs\\C#\\OrderedListNovidea\\OrderedList.Tests\\OrderedList.Tests.csproj": {}
+  },
+  "projects": {
+    "c:\\Users\\anna\\Documents\\My Webs\\C#\\OrderedListNovidea\\OrderedList.Tests\\OrderedList.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\anna\\Documents\\My Webs\\C#\\OrderedListNovidea\\OrderedList.Tests\\OrderedList.Tests.csproj",
+        "projectName": "OrderedList.Tests",
+        "projectPath": "c:\\Users\\anna\\Documents\\My Webs\\C#\\OrderedListNovidea\\OrderedList.Tests\\OrderedList.Tests.csproj",
+        "packagesPath": "C:\\Users\\anna\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\anna\\Documents\\My Webs\\C#\\OrderedListNovidea\\OrderedList.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\anna\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "c:\\Users\\anna\\Documents\\My Webs\\C#\\OrderedListNovidea\\OrderedListExecise\\OrderedListExecise.csproj": {
+                "projectPath": "c:\\Users\\anna\\Documents\\My Webs\\C#\\OrderedListNovidea\\OrderedListExecise\\OrderedListExecise.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.4.1, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.3, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            },
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "Selenium.WebDriver.ChromeDriver": {
+              "target": "Package",
+              "version": "[109.0.5414.7400, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "c:\\Users\\anna\\Documents\\My Webs\\C#\\OrderedListNovidea\\OrderedListExecise\\OrderedListExecise.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\anna\\Documents\\My Webs\\C#\\OrderedListNovidea\\OrderedListExecise\\OrderedListExecise.csproj",
+        "projectName": "OrderedListExecise",
+        "projectPath": "c:\\Users\\anna\\Documents\\My Webs\\C#\\OrderedListNovidea\\OrderedListExecise\\OrderedListExecise.csproj",
+        "packagesPath": "C:\\Users\\anna\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\anna\\Documents\\My Webs\\C#\\OrderedListNovidea\\OrderedListExecise\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\anna\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

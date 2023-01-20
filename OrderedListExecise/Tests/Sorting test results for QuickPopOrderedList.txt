@@ -1,0 +1,60 @@
+******************************
+QuickPop list run with System.DateTime
+
+Newly populated QuickPop:
+-----------------------
+1/20/2023 11:23:49 PM
+1/20/2023 11:23:49 PM
+1/21/2023 11:23:49 PM
+1/24/2023 11:23:49 PM
+1/25/2023 11:23:49 PM
+1/29/2023 11:23:49 PM
+1/30/2023 11:23:49 PM
+2/5/2023 11:23:49 PM
+2/13/2023 11:23:49 PM
+2/18/2023 11:23:49 PM
+
+Pop from QuickPop list
+-----------------------
+1/20/2023 11:23:49 PM
+1/20/2023 11:23:49 PM
+1/21/2023 11:23:49 PM
+1/24/2023 11:23:49 PM
+1/25/2023 11:23:49 PM
+1/29/2023 11:23:49 PM
+1/30/2023 11:23:49 PM
+2/5/2023 11:23:49 PM
+2/13/2023 11:23:49 PM
+2/18/2023 11:23:49 PM
+
+*****************************
+QuickPop list run with OrderedListNovidea.Person
+
+Newly populated QuickPop:
+-----------------------
+Year of birth: 1909
+Year of birth: 1924
+Year of birth: 1925
+Year of birth: 1939
+Year of birth: 1951
+Year of birth: 1952
+Year of birth: 1990
+Year of birth: 2005
+Year of birth: 2006
+Year of birth: 2016
+
+Pop from QuickPop list
+-----------------------
+Year of birth: 1909
+Year of birth: 1924
+Year of birth: 1925
+Year of birth: 1939
+Year of birth: 1951
+Year of birth: 1952
+Year of birth: 1990
+Year of birth: 2005
+Year of birth: 2006
+Year of birth: 2016
+
+****************************
+Conclusion: QuickPopOrderedList is sorted upon populating. It is popped immediately
