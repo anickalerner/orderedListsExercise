@@ -1,7 +1,11 @@
 namespace OrderedListNovidea;
+/// <summary>
+/// Class <Person> represents 
+/// populates OrderedList with Person objects
+/// </summary>
 public class Person: IComparable{
-    public string FirstName {get; set;}
     public string LastName {get; set;}
+    public string FirstName {get; set;}
     public int YearOfBirth {get; set;}
 
     public Person(string ln, string fn, int year){
@@ -10,6 +14,9 @@ public class Person: IComparable{
         YearOfBirth = year;
     }
 
+    /// <summary>
+    /// Method <CompareTo>  allows comparing two Person objects based on YearOfBirth
+    /// </summary>
     public int CompareTo(object p){
         if (p == null) return 0;
         Person anotherPerson = p as Person;

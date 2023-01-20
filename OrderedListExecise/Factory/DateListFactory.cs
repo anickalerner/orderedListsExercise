@@ -1,4 +1,8 @@
 namespace OrderedListNovidea;
+/// <summary>
+/// Class <DateListFactory> populates OrderedList with DateTime strings.
+/// It mainly serves testing purposes
+/// </summary>
 public class DateListFactory: ListFactory{
 
     public override void PopulateList(OrderedList list, int size){

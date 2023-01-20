@@ -2,7 +2,7 @@ namespace OrderedListNovidea;
 
 public class SortingTest{
 
-    public SortingTest(){
+    public void TestLists(){
         
         DateListFactory dateFactory = new DateListFactory();
         
@@ -26,7 +26,7 @@ public class SortingTest{
         
     }
 
-        public void RunListTest(OrderedList? list){
+    public void RunListTest(OrderedList? list){
         System.Console.WriteLine("******************************");
         System.Console.WriteLine("{0} list run with {1}", list?.Name, list?.Head?.Node.GetType().ToString());
         System.Console.WriteLine("");

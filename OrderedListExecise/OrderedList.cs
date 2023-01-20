@@ -1,4 +1,9 @@
 namespace OrderedListNovidea;
+/// <summary>
+/// Class <OrderedList> extends LinkedList by sorting behaviour
+/// The list will be sorted by Merge Sort algorithm
+/// </summary>
+
 public class OrderedList: LinkedList{
     public string Name;
 
@@ -30,8 +35,7 @@ public class OrderedList: LinkedList{
         return sortedlist;
     }
 
-    LinkedListNode? getMiddle(LinkedListNode head)
-    {
+    LinkedListNode? getMiddle(LinkedListNode head){
         // Base case
         if (head == null)
             return head;
@@ -50,8 +54,7 @@ public class OrderedList: LinkedList{
         return slowptr;
     }
 
-    LinkedListNode? sortedMerge(LinkedListNode a, LinkedListNode b)
-    {
+    LinkedListNode? sortedMerge(LinkedListNode a, LinkedListNode b){
         LinkedListNode? result = null;
         /* Base cases */
         if (a == null)
