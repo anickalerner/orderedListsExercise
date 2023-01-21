@@ -1,3 +1,5 @@
+using System.Diagnostics;
+
 namespace OrderedListNovidea;
 
 /// <summary>
@@ -14,11 +16,17 @@ public class MultiThreadingTest: IRunListTest{
     }
 
     public void TestLists(){
+        System.Console.WriteLine("*** Multithreading Tests ***");
+        
+        Stopwatch stopWatch = new Stopwatch();
+        stopWatch.Start();
         for (int i = 0; i < ThreadsCount; i++)
         {
             Thread thread = new Thread(TestToRun.TestLists);
             thread.Start();
         }
+        stopWatch.Stop();
+        System.Console.WriteLine($"{TestToRun} have run for {stopWatch.ElapsedMilliseconds}");
     }
 }
 

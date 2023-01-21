@@ -8,8 +8,9 @@ namespace OrderedListNovidea;
 /// </summary>
 public class BigOTest: IRunListTest{
 
-    public void TestLists()
-    {
+    public void TestLists(){
+        System.Console.WriteLine("*** Big O Tests ***");
+        
         System.Console.WriteLine("Testing OrderdLists for time complexity.");
         System.Console.WriteLine("The slope for O(1) graph is 0.");
 

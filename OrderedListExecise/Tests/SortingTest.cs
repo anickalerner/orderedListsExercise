@@ -13,6 +13,8 @@ public class SortingTest: IRunListTest{
     /// with 2 types of objects: DateTime and Person, populates each list and runs RunListTest method with each
     ///</summary<
     public void TestLists(){
+        System.Console.WriteLine("*** Sorting Tests ***");
+        
         DateListFactory dateFactory = new DateListFactory();
         QuickPushOrderedList datePushList = new QuickPushOrderedList();
         QuickPopOrderedList datePopList = new QuickPopOrderedList();

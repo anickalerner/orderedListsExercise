@@ -10,7 +10,7 @@ class Program{
         BigOTest bigOTest = new BigOTest();
         bigOTest.TestLists();
 
-        MultiThreadingTest multiThreadingTest = new MultiThreadingTest(new SortingTest(7));
+        MultiThreadingTest multiThreadingTest = new MultiThreadingTest(new SortingTest(7), 20);
         multiThreadingTest.TestLists();
      }
 }
