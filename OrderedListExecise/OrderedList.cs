@@ -7,9 +7,7 @@ namespace OrderedListNovidea;
 public class OrderedList: LinkedList{
     public string Name;
 
-    public OrderedList(string name):base(){
-        Name = name;
-    }
+    public OrderedList(string name):base() => Name = name;
 
     public LinkedListNode? mergeSort(LinkedListNode head){
         // Base case : if head is null

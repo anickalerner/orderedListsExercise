@@ -6,19 +6,20 @@ namespace OrderedListNovidea;
 public class ListFactory{
 
     Random random = new Random();
+    public readonly object factoryLock = new object();
     /// <summary>
     /// Metohod <PopulateList> is a default population of OrderedList.
     /// The list is populated with integers
     /// </summary>
     public virtual void PopulateList(OrderedList list, int size){
-        for (int i = 0; i < size; i++)
-        {
-            list.Push(GetRandomInt(0, 30));
+        lock(factoryLock){
+            for (int i = 0; i < size; i++)
+            {
+                list.Push(GetRandomInt(0, 30));
+            }
         }
     }
 
-    public int GetRandomInt(int from, int to){
-        return random.Next(from, to);
-    }   
+    public int GetRandomInt(int from, int to) => random.Next(from, to);
 
 }

@@ -2,11 +2,12 @@ using System.Diagnostics;
 
 namespace OrderedListNovidea;
 
-public class BigOTest{
-    /// <summary>
-    /// Tests all List / Operation variations for different types of objects
-    /// DateTime and Person
-    /// </summary>
+/// <summary>
+/// Class <BigOTest> Tests all List / Operation variations for two different types of objects:
+/// DateTime and Person
+/// </summary>
+public class BigOTest: IRunListTest{
+
     public void TestLists()
     {
         System.Console.WriteLine("Testing OrderdLists for time complexity.");
@@ -76,9 +77,9 @@ public class BigOTest{
             results[i] = stopWatch.ElapsedMilliseconds;
         }
         System.Console.WriteLine("------------------------------");
-        System.Console.WriteLine("Testing {0} {1} with nodes of type {2}", listType, operation.ToUpper(), listNodeObjectType);
-        System.Console.WriteLine("Run {0} tests on input sizes from {1} to {2} ", results.Length, 0, results.Length);
-        System.Console.WriteLine("The slope of QuickPushOrderedList {0} is {1}", operation.ToUpper(), GetResultsSlope(results));
+        System.Console.WriteLine($"Testing {listType} {operation.ToUpper()} with nodes of type {listNodeObjectType}");
+        System.Console.WriteLine($"Run {results.Length} tests on input sizes from 0 to {results.Length} ");
+        System.Console.WriteLine($"The slope of QuickPushOrderedList {operation.ToUpper()} is {GetResultsSlope(results)}");
     }
 
     ///<summary>

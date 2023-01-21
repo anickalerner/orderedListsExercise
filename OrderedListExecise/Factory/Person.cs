@@ -8,9 +8,9 @@ public class Person: IComparable{
     public string FirstName {get; set;}
     public int YearOfBirth {get; set;}
 
-    public Person(string ln, string fn, int year){
-        LastName = ln;
-        FirstName = fn;
+    public Person(string lastName, string firstName, int year){
+        LastName = lastName;
+        FirstName = firstName;
         YearOfBirth = year;
     }
 
@@ -24,7 +24,5 @@ public class Person: IComparable{
         return YearOfBirth - anotherPerson.YearOfBirth;
     }
 
-    public override string ToString(){
-       return "Year of birth: " + YearOfBirth;
-    }
+    public override string ToString() => "Year of birth: " + YearOfBirth;
 }

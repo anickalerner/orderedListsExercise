@@ -4,10 +4,13 @@ class Program{
     static void Main(string [] args){
         Console.WriteLine("Ordered List Exercise");
 
-        SortingTest sortingTest = new SortingTest();
+        /* SortingTest sortingTest = new SortingTest(10);
         sortingTest.TestLists();
+        
+        BigOTest bigOTest = new BigOTest();
+        bigOTest.TestLists(); */
 
-        BigOTest test = new BigOTest();
-        test.TestLists();
-    }
+        MultiThreadingTest multiThreadingTest = new MultiThreadingTest(new SortingTest(7));
+        multiThreadingTest.TestLists();
+     }
 }
