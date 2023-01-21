@@ -58,11 +58,11 @@ abstract public class LinkedList{
     /// and prints them to the console one by one
     /// </summary>
     public void PopAllAndPrint(){
-        //lock(listLock){
+        lock(listLock){
             while (Head != null){
                 System.Console.WriteLine(Pop());
             }
-        //}
+        }
     }
 
     /// <summary>
