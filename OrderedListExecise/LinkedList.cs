@@ -5,8 +5,8 @@ namespace OrderedListNovidea;
 abstract public class LinkedList{
     public LinkedListNode? Head;
     public int Counter = 0;
-    private readonly object listLock = new object();
-    
+    public readonly object listLock = new object();
+
     /// <summary>
     /// Method <Push> adds an item to the beginning of the list.
     /// The new head item points to the rest of the list.
@@ -28,13 +28,13 @@ abstract public class LinkedList{
     /// </summary>
     public virtual IComparable? Pop(){
         if (Head == null) return null;
-        IComparable? node = null;
+        IComparable? nodeToPop = null;
         lock(listLock){
-            node = Head.Node;
+            nodeToPop = Head.Node;
             Head = Head.Next;
             Counter--;
         }
-        return node;
+        return nodeToPop;
     }
 
     /// <summary>
@@ -79,8 +79,8 @@ abstract public class LinkedList{
     /// <summary>
     /// Method <GetNodeType> returns the type of the object that is stored in the list item node
     /// </summary>
-    public string? GetNodeType(){
-        if (Head == null) return null;
+    public string GetNodeType(){
+        if (Head == null) return "";
         return Head.Node.GetType().ToString();
     }
 }

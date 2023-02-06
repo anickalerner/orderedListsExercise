@@ -14,14 +14,14 @@ public class LinkedListNode: IComparable{
         Next = null;
     }
 
-    public override string ToString() => Node.ToString();
+    public override string? ToString() => Node.ToString();
 
     /// <summary>
     /// Method <CompareTo> delegates comparing nodes to the types of the node data objects
     /// </summary>
-    public int CompareTo(object incomingObj){
-        LinkedListNode incomingNode = incomingObj as LinkedListNode;
-        return Node.CompareTo(incomingNode.Node);
+    public int CompareTo(object? incomingObj){
+        LinkedListNode? incomingNode = incomingObj as LinkedListNode;
+        return Node.CompareTo(incomingNode?.Node);
     }
 
 }

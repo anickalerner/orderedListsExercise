@@ -8,7 +8,7 @@ public class DateListFactory: ListFactory{
         lock(factoryLock){
             for (int i = 0; i < size; i++)
             {
-                list.Push(DateTime.Now.AddDays(GetRandomInt(0, 30)));
+                list.Push(DateTime.Now.AddDays(GetRandomInt(0, size)));
             }
         }
     }

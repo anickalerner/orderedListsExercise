@@ -1,22 +1,30 @@
 Ordered List Exercise
+*** Big O Tests ***
 Testing OrderdLists for time complexity.
 The slope for O(1) graph is 0.
+The slope for O(n) graph is > 0 and constant
 ------------------------------
 Testing OrderedListNovidea.QuickPushOrderedList PUSH with nodes of type System.DateTime
-Run 365 tests on input sizes from 0 to 365 
-The slope of QuickPushOrderedList PUSH is -0.09315068493150686
+Input lists contain 100, 1000, 10000 items
+The slopes are 0, 0
+The time complexity is O(1)
 ------------------------------
-Testing OrderedListNovidea.QuickPopOrderedList PUSH with nodes of type System.DateTime
-Run 433 tests on input sizes from 0 to 433 
-The slope of QuickPushOrderedList PUSH is -4.20554272517321
+Testing OrderedListNovidea.QuickPushOrderedList POP with nodes of type System.DateTime
+Input lists contain 100, 1000, 10000 items
+The slopes are 0.01, 0.13
+The time complexity growth is not linear
 ------------------------------
 Testing OrderedListNovidea.QuickPushOrderedList PUSH with nodes of type OrderedListNovidea.Person
-Run 560 tests on input sizes from 0 to 560 
-The slope of QuickPushOrderedList PUSH is -0.08571428571428572
+Input lists contain 100, 1000, 10000 items
+The slopes are 0, 0
+The time complexity is O(1)
 ------------------------------
-Testing OrderedListNovidea.QuickPopOrderedList PUSH with nodes of type OrderedListNovidea.Person
-Run 499 tests on input sizes from 0 to 499 
-The slope of QuickPushOrderedList PUSH is -8.230460921843687
+Testing OrderedListNovidea.QuickPushOrderedList POP with nodes of type OrderedListNovidea.Person
+Input lists contain 100, 1000, 10000 items
+The slopes are 0.04, 0.27
+The time complexity growth is not linear
 
 ******************
-Conclusion: PUSH operations with QuickPushOrderedList are clearly more effitient than POP operations
+Conclusion: 
+    PUSH operations with QuickPushOrderedList have complexity of O(1)
+    POP operations with QuickPushOrderedList 
