@@ -5,23 +5,56 @@ The slope for O(1) graph is 0.
 The slope for O(n) graph is > 0 and constant
 ------------------------------
 Testing OrderedListNovidea.QuickPushOrderedList PUSH with nodes of type System.DateTime
-Input lists contain 100, 1000, 10000 items
-The slopes are 0, 0
+Input size: 100, time: 24
+Input size: 1000, time: 25
+Input size: 5000, time: 27
+Input size: 10000, time: 31
+Input size: 20000, time: 39
+Input size: 40000, time: 68
+Input size: 60000, time: 93
+Input size: 80000, time: 134
+Input size: 100000, time: 184
+The slopes are 0, 0, 0, 0, 0, 0, 0, 0
 The time complexity is O(1)
 ------------------------------
 Testing OrderedListNovidea.QuickPushOrderedList POP with nodes of type System.DateTime
-Input lists contain 100, 1000, 10000 items
-The slopes are 0.01, 0.13
+Input size: 100, time: 1
+Input size: 1000, time: 12
+Input size: 5000, time: 326
+Input size: 10000, time: 1492
+Input size: 20000, time: 6130
+Input size: 40000, time: 24489
+Input size: 60000, time: 66064
+Input size: 80000, time: 139563
+Input size: 100000, time: 256173
+The slopes are 0.01, 0.08, 0.23, 0.46, 0.92, 2.08, 3.67, 5.83
+
 The time complexity growth is not linear
 ------------------------------
 Testing OrderedListNovidea.QuickPushOrderedList PUSH with nodes of type OrderedListNovidea.Person
-Input lists contain 100, 1000, 10000 items
-The slopes are 0, 0
+Input size: 100, time: 22
+Input size: 1000, time: 23
+Input size: 5000, time: 29
+Input size: 10000, time: 39
+Input size: 20000, time: 54
+Input size: 40000, time: 94
+Input size: 60000, time: 141
+Input size: 80000, time: 199
+Input size: 100000, time: 270
+The slopes are 0, 0, 0, 0, 0, 0, 0, 0
 The time complexity is O(1)
 ------------------------------
 Testing OrderedListNovidea.QuickPushOrderedList POP with nodes of type OrderedListNovidea.Person
-Input lists contain 100, 1000, 10000 items
-The slopes are 0.04, 0.27
+Input size: 100, time: 1
+Input size: 1000, time: 33
+Input size: 5000, time: 669
+Input size: 10000, time: 2985
+Input size: 20000, time: 12055
+Input size: 40000, time: 48307
+Input size: 60000, time: 129989
+Input size: 80000, time: 284008
+Input size: 100000, time: 531113
+The slopes are 0.04, 0.16, 0.46, 0.91, 1.81, 4.08, 7.7, 12.36
 The time complexity growth is not linear
 
 ******************

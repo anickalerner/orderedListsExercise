@@ -52,7 +52,13 @@ public class BigOTest: IRunListTest{
         var results = new List<RuntimeResult>{
             {new RuntimeResult(){InputSize = 100}},
             {new RuntimeResult(){InputSize = 1000}},
+            {new RuntimeResult(){InputSize = 5000}},
             {new RuntimeResult(){InputSize = 10000}},
+            {new RuntimeResult(){InputSize = 20000}},
+            {new RuntimeResult(){InputSize = 40000}},
+            {new RuntimeResult(){InputSize = 60000}},
+            {new RuntimeResult(){InputSize = 80000}},
+            {new RuntimeResult(){InputSize = 100000}},
         };
         string listNodeType = "";
         foreach( RuntimeResult result in results ){
@@ -98,7 +104,6 @@ public class BigOTest: IRunListTest{
             System.Console.WriteLine($"Input size: {results[i].InputSize}, time: {results[i].Runtime}");
         }
         string inputSizes = results.Aggregate("", (i, j) =>  i.Length > 0 ? $"{i}, {j.InputSize.ToString()}" : j.InputSize.ToString());
-        System.Console.WriteLine($"Input lists contain {inputSizes} items");
         System.Console.WriteLine($"The slopes are {string.Join(", ", slopes)}");
         if (slopes.Length > 1){
             // If the slope between each two points is different, the complefity of the function is not linear (not O(n))
